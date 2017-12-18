@@ -53,7 +53,7 @@
 $a = $_POST['a'];
 $o = $_POST['operators'];
 $b = $_POST['b'];
-if (($o == '/') && ($b == 0)) {
+if ((($o == '/') && ($b == 0)) || (($o == '%') && ($b == 0))) {
     echo "Divided by 0 don't permition.";
     exit;
 }
